@@ -268,13 +268,14 @@ The standalone application entry point is:
 python -m src.main \
   --keyword "plumber" \
   --location "Antipolo City, Rizal, Philippines" \
+  --country-code PH \
   --max-results 3 \
   --output-dir output \
   --output-name antipolo_plumbers
 
 On Windows Command Prompt, the same command can be entered on one line:
 
-python -m src.main --keyword "plumber" --location "Antipolo City, Rizal, Philippines" --max-results 3 --output-dir output --output-name antipolo_plumbers
+python -m src.main --keyword "plumber" --location "Antipolo City, Rizal, Philippines" --country-code PH --max-results 3 --output-dir output --output-name antipolo_plumbers
 
 The workflow produces:
 
@@ -301,6 +302,7 @@ A real end-to-end Docker smoke test was completed with:
 
 keyword: plumber
 location: Antipolo City, Rizal, Philippines
+country_code: PH
 max_results: 1
 
 The container completed the lead-research workflow and produced one lead with CSV, XLSX, and JSON exports persisted to the host through a mounted output directory.
@@ -378,9 +380,9 @@ The project includes regression tests covering the major workflow components, in
 - Evidence-grounded assessment
 - Deterministic assessment validation
 - Structured assessment exports
-Final regression result after Docker and Azure deployment validation:
+Final regression result after country-code propagation validation:
 
-119 passed in 47.39s
+121 passed in 35.44s
 
 
 Technology Stack
@@ -443,7 +445,7 @@ Deterministic validation             PASSED
 Structured exports                   PASSED
 Docker build and execution           PASSED
 Azure cloud execution                PASSED
-Final regression suite               119/119 PASSED
+Final regression suite               121/121 PASSED
+Public GitHub portfolio              PUBLISHED
 
-The remaining release activity is repository documentation and GitHub publication.
-
+The public repository is intentionally portfolio-focused. The complete implementation and reusable source code remain private, while the public repository documents the architecture, verified engineering results, deployment evidence, and technical capabilities.
