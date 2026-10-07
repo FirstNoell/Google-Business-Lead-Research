@@ -6,6 +6,24 @@ The project combines browser automation, deterministic data processing, evidence
 
 It is designed as a portfolio demonstration of practical **Python automation, web research, RAG, AI-assisted decision support, QA engineering, Docker, and Azure deployment**.
 
+## Verified Engineering Evidence
+
+The public portfolio includes sanitized runtime evidence from the completed implementation. The reusable source code, private tests, raw business records, and sensitive implementation details remain private.
+
+- [Real-World Validation Case Study](docs/CaseStudy.md)
+- [Controlled AI Routing](docs/evidence/01-ai-routing.txt)
+- [Semantic Retrieval and Ollama Embeddings](docs/evidence/02-semantic-retrieval.txt)
+- [Evidence-Grounded AI Assessment](docs/evidence/03-evidence-grounded-assessment.txt)
+- [Deterministic AI Guardrails](docs/evidence/04-deterministic-guardrails.txt)
+- [Deterministic Lead Quality QA](docs/evidence/05-lead-quality-qa.txt)
+- [Real-World Lead Output and Structured Exports](docs/evidence/06-real-world-exports.txt)
+- [Docker Runtime and Host-Persisted Exports](docs/evidence/07-docker-runtime.txt)
+- [Azure Container Apps Job Runtime](docs/evidence/08-azure-runtime.txt)
+- [Final Regression Suite - 121/121 Passed](docs/evidence/09-regression-tests.txt)
+
+These artifacts distinguish controlled synthetic AI validation, real local AI runtime, live public-business validation, deterministic QA, container execution, and Azure cloud execution so that each portfolio claim can be evaluated against the type of evidence actually collected.
+
+
 ---
 
 ## Project Overview
@@ -382,7 +400,7 @@ The project includes regression tests covering the major workflow components, in
 - Structured assessment exports
 Final regression result after country-code propagation validation:
 
-121 passed in 35.44s
+121 passed in 29.95s
 
 
 Technology Stack
