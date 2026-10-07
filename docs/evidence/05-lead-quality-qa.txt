@@ -1,0 +1,38 @@
+DETERMINISTIC LEAD QUALITY QA - RUNTIME EVIDENCE
+
+Validation type:
+Deterministic production lead-quality validation
+
+Observed runtime results:
+
+Complete Business
+Score: 100
+Status: approved
+Flags: []
+
+Review Business
+Score: 60
+Status: review
+Flags: ['missing_address', 'missing_website']
+
+Sparse Business
+Score: 10
+Status: rejected
+Flags: ['missing_business_name', 'missing_phone', 'missing_address', 'missing_website', 'missing_search_location']
+
+Verification:
+The production lead-quality layer assigns deterministic completeness
+scores, QA classifications, and explicit missing-data flags.
+
+The observed runtime demonstrated all three QA outcomes:
+approved, review, and rejected.
+
+Incomplete records are not automatically promoted to approved status.
+Missing information is preserved as a QA condition rather than filled
+with unsupported values.
+
+The business names used above are controlled validation records and are
+not presented as live-business research results.
+
+Evidence captured:
+2026-10-07

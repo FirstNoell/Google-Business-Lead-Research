@@ -1,0 +1,47 @@
+AZURE CONTAINER APPS JOB - CLOUD RUNTIME EVIDENCE
+
+Validation type:
+Real Azure cloud container execution
+
+Azure service:
+Azure Container Apps Jobs
+
+Job:
+google-business-lead-research
+
+Observed successful execution:
+Execution ID: google-business-lead-research-cbkuluo
+Status: Succeeded
+
+Observed Azure console logs:
+Lead research completed: 1 leads
+CSV: output/azure_smoke_test.csv
+XLSX: output/azure_smoke_test.xlsx
+JSON: output/azure_smoke_test.json
+
+Log verification:
+The Azure Log Analytics results showed four stdout records associated
+with the successful google-business-lead-research job execution.
+
+Verification:
+The containerized standalone lead-research workload executed
+successfully as an Azure Container Apps Job and processed one lead.
+
+The application reported generation of CSV, XLSX, and JSON output paths
+inside the Azure job container.
+
+Storage scope:
+The reported Azure output paths were located in ephemeral container
+storage. This validation does not claim persistent Azure Files or Blob
+Storage for those generated files.
+
+Persistent output behavior was separately verified through the local
+Docker bind-mount validation.
+
+AI scope:
+This Azure execution validates deployment of the standalone
+containerized lead-research workflow. It does not claim that the local
+Ollama, qwen2.5, or nomic-embed-text services were hosted in Azure.
+
+Evidence captured:
+2026-10-07

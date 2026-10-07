@@ -1,0 +1,50 @@
+DOCKER CONTAINER RUNTIME - DEPLOYMENT EVIDENCE
+
+Validation type:
+Real containerized live-business pipeline execution
+
+Docker image:
+Repository: google-business-lead-research
+Tag: step15
+Image ID: a1a8872fcdcd
+Observed image size: 4.28GB
+
+Runtime configuration:
+Keyword: dentist
+Location: Antipolo City, Rizal, Philippines
+Country code: PH
+Maximum results: 1
+
+Observed container result:
+Lead research completed: 1 leads
+CSV: output/docker_evidence.csv
+XLSX: output/docker_evidence.xlsx
+JSON: output/docker_evidence.json
+
+Container behavior:
+The application was executed from the Docker image with --rm and a
+bind-mounted output directory.
+
+After the temporary container exited, the generated files were verified
+on the Windows host:
+
+docker_evidence.csv
+Size: 620 bytes
+
+docker_evidence.json
+Size: 887 bytes
+
+docker_evidence.xlsx
+Size: 5,362 bytes
+
+Verification:
+This demonstrates that the standalone application executed successfully
+inside Docker, processed a live public-business search, generated all
+three supported export formats, and persisted the outputs through the
+host bind mount after the temporary container was removed.
+
+This evidence demonstrates local Docker deployment. It does not imply
+that the local Ollama AI services were hosted inside this container.
+
+Evidence captured:
+2026-10-07

@@ -1,0 +1,26 @@
+CONTROLLED AI ROUTING - RUNTIME EVIDENCE
+
+Validation type:
+Controlled integration/runtime validation
+
+AI model:
+qwen2.5 via local Ollama
+
+Observed runtime result:
+AI CONTROLLED ROUTING RESULT
+Selected tool: retrieve_evidence
+Status: approved
+
+Verification:
+The production controlled-agent path received a natural-language request
+and selected an allowlisted retrieval tool.
+
+The routing layer restricts model-selected actions to approved tools.
+This evidence demonstrates controlled AI tool selection, not unrestricted
+autonomous execution or native function calling.
+
+Related targeted tests:
+3 passed in 52.82s
+
+Evidence captured:
+2026-10-07

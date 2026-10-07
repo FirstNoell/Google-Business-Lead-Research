@@ -1,0 +1,27 @@
+FINAL REGRESSION TEST SUITE - VERIFICATION EVIDENCE
+
+Validation type:
+Full private production regression suite
+
+Environment:
+Python 3.11.15
+pytest 9.1.1
+
+Observed final test result:
+......................................................................... [ 60%]
+................................................                          [100%]
+121 passed in 29.95s
+
+Verification:
+The complete private test suite passed after the portfolio-readiness,
+AI/RAG, deterministic validation, structured export, Docker deployment,
+country-code propagation, and Azure deployment work was completed.
+
+The public portfolio intentionally does not publish the complete private
+test suite or proprietary implementation.
+
+This evidence reports the observed regression result without exposing
+the underlying private test code.
+
+Evidence captured:
+2026-10-07

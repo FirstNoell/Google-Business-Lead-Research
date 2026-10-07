@@ -1,0 +1,40 @@
+DETERMINISTIC AI GUARDRAILS - RUNTIME EVIDENCE
+
+Validation type:
+Deterministic production validation
+
+Observed runtime results:
+
+Grounded assessment:
+Confidence: 0.90
+Evidence IDs: ['evidence-0']
+Result: supported
+
+Unsupported assessment:
+Confidence: 0.99
+Evidence IDs: []
+Result: review
+
+Verification:
+The deterministic assessment validator does not accept AI confidence as
+sufficient proof by itself.
+
+A grounded assessment with confidence above the required threshold and
+supporting evidence remained supported.
+
+A higher-confidence assessment with no supporting evidence was
+downgraded to review.
+
+This demonstrates that unsupported AI output cannot become supported
+solely because the model reports high confidence.
+
+Protected validation scenarios:
+- Low-confidence supported assessment -> review
+- Confidence at the 0.85 threshold with evidence -> supported
+- Missing evidence IDs -> review
+- Missing source URLs -> review
+- Invalid assessment status -> review
+- Out-of-range confidence -> review
+
+Evidence captured:
+2026-10-07

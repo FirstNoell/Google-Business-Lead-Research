@@ -1,0 +1,37 @@
+EVIDENCE-GROUNDED AI ASSESSMENT - RUNTIME EVIDENCE
+
+Validation type:
+Real AI runtime using controlled synthetic evidence
+
+AI model:
+qwen2.5 via local Ollama
+
+Assessment question:
+Does this business provide emergency plumbing services?
+
+Supplied evidence:
+Emergency plumbing, leaking pipe repair, and drain services.
+
+Observed runtime result:
+Answer: Yes
+Confidence: 0.9
+Evidence IDs: ['evidence-0']
+Source URLs: ['https://example.com/plumbing']
+Status: supported
+
+Verification:
+The production EvidenceAssessor processed supplied evidence through the
+real local qwen2.5 integration and returned a structured assessment.
+
+The assessment preserved the supporting evidence identifier and derived
+source provenance from the supplied retrieval metadata.
+
+The AI response was not manually substituted or mocked for this runtime
+verification.
+
+The business context and example.com URL are controlled synthetic data.
+They are not presented as a real business or live-business research
+result.
+
+Evidence captured:
+2026-10-07

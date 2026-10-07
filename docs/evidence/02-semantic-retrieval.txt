@@ -1,0 +1,40 @@
+SEMANTIC RETRIEVAL AND EMBEDDINGS - RUNTIME EVIDENCE
+
+Validation type:
+Controlled synthetic integration/runtime validation
+
+Embedding model:
+nomic-embed-text via local Ollama
+
+Observed embedding runtime result:
+Model: nomic-embed-text
+Vector dimensions: 768
+Numeric vector: True
+Non-empty: True
+
+Semantic retrieval query:
+Who can fix a leaking pipe?
+
+Observed retrieval result:
+Evidence ID: evidence-0
+Retrieved: Emergency plumbing, leaking pipe repair, and drain services.
+Business: Portfolio Plumbing
+Source: https://example.com/plumbing
+
+Verification:
+The production evidence pipeline generated embeddings with
+nomic-embed-text, stored embedded evidence in ChromaDB, and performed
+semantic retrieval against the stored evidence.
+
+The retrieved result preserved its evidence identifier and source
+provenance metadata.
+
+The business name and example.com URL above are controlled synthetic
+test data. They are not presented as a real business or live-business
+research result.
+
+Related targeted test:
+1 passed in 10.24s
+
+Evidence captured:
+2026-10-07

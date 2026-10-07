@@ -1,0 +1,84 @@
+REAL-WORLD LEAD OUTPUT AND STRUCTURED EXPORTS - RUNTIME EVIDENCE
+
+Validation type:
+Live public-business pipeline validation with sanitized reporting
+
+Search configuration:
+Keyword: dentist
+Location: Antipolo City, Rizal, Philippines
+Country code: PH
+Maximum results: 5
+
+Observed pipeline result:
+Records produced: 5
+QA status distribution:
+- approved: 0
+- review: 4
+- rejected: 1
+
+Observed QA score range:
+35 to 60
+
+Data-quality behavior:
+The live records contained varying levels of extracted information.
+Missing phone, address, and website values remained missing rather than
+being replaced with unsupported values.
+
+Examples observed in the private validation artifacts included records
+with an extracted address, records with an extracted website/domain,
+and records where those fields were unavailable.
+
+Structured lead export contract:
+21 columns
+
+business_name
+category
+industry
+phone
+phone_e164
+email
+address
+address_line1
+city
+state
+postal_code
+country_code
+website
+website_domain
+source
+source_url
+search_keyword
+search_location
+qa_status
+qa_score
+qa_flags
+
+Verified export formats:
+CSV: 5 records
+JSON: 5 records
+XLSX: 5 records
+
+XLSX verification:
+Sheet: Leads
+Columns: 21
+Records: 5
+QA results:
+- rejected, score 35
+- review, score 50
+- review, score 60
+- review, score 60
+- review, score 50
+
+Verification:
+All three export formats were generated from the same live-business
+validation run.
+
+The private validation artifacts retain source provenance, including
+Google Business discovery source URLs, while this public evidence
+summary intentionally omits business identities, street addresses,
+websites, and raw source URLs.
+
+No incomplete record was promoted to approved status.
+
+Evidence captured:
+2026-10-07
